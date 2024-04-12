@@ -1,0 +1,7 @@
+BA|DH|INT: This hint is one of these.
+SC|ORE: Up and to the left.
+SU|BM|IT: Can't finish a guess without.
+SCR|E|EN: Can't begin a guess without.
+HOM|OPH|ONE: This hint contains won.
+BL|ANK: 
+FR|UST|RAT|ED: You may feel like this after.

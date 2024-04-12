@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Seven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOc-D3-cpQ">
+                                <rect key="frame" x="20" y="24" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="b56-Mu-k1g"/>
+                                    <constraint firstAttribute="height" constant="21" id="uuc-w6-kMQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-4e-8NU">
+                                <rect key="frame" x="178" y="24" width="500" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="Wcw-Uv-g9x"/>
+                                    <constraint firstAttribute="width" constant="500" id="bmf-xf-tVb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level: 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-N5-UaS">
+                                <rect key="frame" x="1104" y="24" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fo1-8F-ERx"/>
+                                    <constraint firstAttribute="width" constant="150" id="kts-pV-n8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpa-Og-S7m">
+                                <rect key="frame" x="946" y="23" width="150" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="lUH-8t-vSW"/>
+                                    <constraint firstAttribute="width" constant="150" id="uTo-qr-JKa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ukG-b9-91B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap Letters To Guess" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjj-xH-9Og">
+                                <rect key="frame" x="465" y="350" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ays-bw-6CX"/>
+                                    <constraint firstAttribute="height" constant="34" id="PlI-dL-8gk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-Vm-vMA">
+                                <rect key="frame" x="310" y="434" width="560" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U5K-GB-1W6">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAB-DJ-3yO">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSH-Ti-XV8">
+                                                <rect key="frame" x="0.0" y="69" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC2-UH-4ny">
+                                                <rect key="frame" x="0.0" y="138" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-rQ-Ef5">
+                                                <rect key="frame" x="0.0" y="207" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-Ch-OdT">
+                                        <rect key="frame" x="116" y="0.0" width="96" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-YO-ani">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns0-8p-4NO">
+                                                <rect key="frame" x="0.0" y="69" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQW-6K-mud">
+                                                <rect key="frame" x="0.0" y="138" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-5p-jCk">
+                                                <rect key="frame" x="0.0" y="207" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-iO-a5L">
+                                        <rect key="frame" x="232" y="0.0" width="96" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iR-uL-fUo">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d06-oa-eIZ">
+                                                <rect key="frame" x="0.0" y="69" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au9-xN-AYz">
+                                                <rect key="frame" x="0.0" y="138" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOY-l8-fd0">
+                                                <rect key="frame" x="0.0" y="207" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YlQ-F3-xdL">
+                                        <rect key="frame" x="348" y="0.0" width="96" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2X-KT-fn5">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jq-is-w1m">
+                                                <rect key="frame" x="0.0" y="69" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azs-Km-Ke2">
+                                                <rect key="frame" x="0.0" y="138" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9B-a9-MP0">
+                                                <rect key="frame" x="0.0" y="207" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-EC-8lx">
+                                        <rect key="frame" x="464" y="0.0" width="96" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuk-zL-BKK">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWN-bK-Wsi">
+                                                <rect key="frame" x="0.0" y="69" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp5-ld-19u">
+                                                <rect key="frame" x="0.0" y="138" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-ho-iz4">
+                                                <rect key="frame" x="0.0" y="207" width="96" height="53"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="WWW"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-W2-jcL">
+                                <rect key="frame" x="477" y="390" width="226" height="40.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-wh-KIc">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="40.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfM-lT-W1l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-Da-4vx">
+                                        <rect key="frame" x="134" y="0.0" width="92" height="40.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWF-Os-bfe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AQl-Vm-vMA" firstAttribute="top" secondItem="ebc-W2-jcL" secondAttribute="bottom" constant="3.5" id="3fy-S8-16d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nnr-N5-UaS" secondAttribute="bottom" constant="755" id="6KS-G5-fpe"/>
+                            <constraint firstItem="YOc-D3-cpQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7gn-X9-lKS"/>
+                            <constraint firstItem="Zjj-xH-9Og" firstAttribute="top" secondItem="hBw-4e-8NU" secondAttribute="bottom" constant="51" id="CO7-tr-IFZ"/>
+                            <constraint firstItem="Zjj-xH-9Og" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MnV-ax-psN"/>
+                            <constraint firstItem="hBw-4e-8NU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OF8-Dh-ESc"/>
+                            <constraint firstItem="Nnr-N5-UaS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Olo-hS-3Pp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nnr-N5-UaS" secondAttribute="trailing" constant="20" id="PzP-cy-FAD"/>
+                            <constraint firstItem="Zjj-xH-9Og" firstAttribute="centerX" secondItem="AQl-Vm-vMA" secondAttribute="centerX" id="XbM-v9-IW6"/>
+                            <constraint firstItem="hBw-4e-8NU" firstAttribute="leading" secondItem="YOc-D3-cpQ" secondAttribute="trailing" constant="8" symbolic="YES" id="adm-fD-SRk"/>
+                            <constraint firstItem="Mpa-Og-S7m" firstAttribute="trailing" secondItem="Nnr-N5-UaS" secondAttribute="trailing" id="cgU-1B-cCK"/>
+                            <constraint firstItem="ebc-W2-jcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="477" id="e8C-It-WDV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YOc-D3-cpQ" secondAttribute="bottom" constant="755" id="eOK-bF-EC5"/>
+                            <constraint firstItem="ebc-W2-jcL" firstAttribute="top" secondItem="Zjj-xH-9Og" secondAttribute="bottom" constant="6" id="efZ-ZI-APC"/>
+                            <constraint firstItem="hBw-4e-8NU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="178" id="jVb-qt-Oyn"/>
+                            <constraint firstItem="Nnr-N5-UaS" firstAttribute="leading" secondItem="Mpa-Og-S7m" secondAttribute="trailing" constant="8" symbolic="YES" id="oe8-yp-qAC"/>
+                            <constraint firstItem="Zjj-xH-9Og" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="350" id="qLm-oG-4jb"/>
+                            <constraint firstItem="Mpa-Og-S7m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="23" id="vfr-uw-Po6"/>
+                            <constraint firstItem="AQl-Vm-vMA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xNk-Co-JLH"/>
+                            <constraint firstItem="d06-oa-eIZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xzv-70-dzD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answersLabel" destination="Mpa-Og-S7m" id="xRM-ay-qWa"/>
+                        <outlet property="cluesLabel" destination="hBw-4e-8NU" id="2zR-4F-VfO"/>
+                        <outlet property="guessTextField" destination="Zjj-xH-9Og" id="eDr-Rd-tr4"/>
+                        <outlet property="levelLabel" destination="Nnr-N5-UaS" id="6RV-pn-TjM"/>
+                        <outlet property="scoreLabel" destination="YOc-D3-cpQ" id="ndc-0J-Rvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
